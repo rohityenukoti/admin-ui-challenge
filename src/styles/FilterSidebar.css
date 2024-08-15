@@ -62,6 +62,7 @@
   font-size: 24px;
   cursor: pointer;
   color: #333;
+  padding: 5px;
 }
 
 .close-sidebar:hover {
@@ -72,5 +73,23 @@
   .filter-sidebar {
     width: 100%;
     left: -100%;
+  }
+
+  .filter-sidebar.open {
+    left: 0;
+  }
+
+  .close-sidebar {
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+    padding: 10px;
+  }
+
+  .filter-group input,
+  .filter-group select,
+  .apply-filters {
+    font-size: 16px;
+    padding: 12px;
   }
 }

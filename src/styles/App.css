@@ -78,17 +78,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
   .sidebar-open .main-content {
     margin-left: 0;
-  }
-
-  .filter-sidebar {
-    width: 100%;
-    left: -100%;
-  }
-
-  .filter-sidebar.open {
-    left: 0;
   }
 
   .top-controls {
@@ -99,5 +98,23 @@ body {
   .sidebar-toggle {
     margin-right: 0;
     margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .view-mode-toggle,
+  .delete-selected {
+    width: 100%;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .search-input {
+    font-size: 16px; /* Prevent zoom on focus in iOS */
+  }
+
+  .search-button {
+    padding: 12px 15px; /* Larger touch target */
   }
 }
